@@ -1,0 +1,19 @@
+{
+    "name": "linus-codes/mailsender",
+    "description": "make sending mails with phpmailer shorter",
+    "type": "library",
+    "require": {
+      "php": ">=8.0",
+      "phpmailer/phpmailer": "^6.7.1"
+    },
+    "license": "MIT",
+    "authors":[{
+        "name": "Linus Koring",
+        "email": "benjamin.koring@icloud.com"
+      }],
+    "autoload": {
+      "psr-4": {
+        "LinusCodes\\mailSender\\": "src/"
+      }
+    }
+  }
