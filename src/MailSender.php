@@ -14,7 +14,7 @@
 
 
         public function __construct(array $params, $pathToPHPMailer){
-            if(! is_array($params)) die('Params are invalid for MailSender')
+            if(! is_array($params)) die('Params are invalid for MailSender');
 
             require_once $pathToPHPMailer.'/Exception.php';
             require_once $pathToPHPMailer.'/PHPMailer.php';
