@@ -1,5 +1,5 @@
 <?php  
-    namespace lp\mailSender;
+    namespace LinusCodes\mailSender;
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
@@ -14,7 +14,7 @@
 
 
         public function __construct(array $params, $pathToPHPMailer){
-            if(! is_array($params)) die('Params are invalid for MailSender');
+            if(! is_array($params) || empty($params)) die('Params are invalid for MailSender');
 
             require_once $pathToPHPMailer.'/Exception.php';
             require_once $pathToPHPMailer.'/PHPMailer.php';
